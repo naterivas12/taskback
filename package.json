@@ -1,0 +1,30 @@
+{
+  "name": "task-back",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel-node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "apollo": "^2.34.0",
+    "apollo-server-express": "^3.13.0",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "graphql": "^16.9.0",
+    "graphql-tools": "^9.0.5",
+    "mongodb": "^6.11.0",
+    "mongoose": "^8.8.3",
+    "task-back": "file:"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0"
+  }
+}
