@@ -16,7 +16,7 @@ const getResolvers = () => {
 				await createTask({ title, description, status }),
 			updateTask: async (_, { id, title, description, status }) =>
 				await updateTask({ id, title, description, status }),
-			deleteTask: async (_, { id }) => await deleteTask(id),
+			deleteTask: async (_, {id }) => await deleteTask(id),
 		},
 	};
 };
