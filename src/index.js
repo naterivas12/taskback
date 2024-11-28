@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 const typeDefs = require("./schema/typeDefs");
-const resolvers = require("./resolvers/taskResolvers");
+const getResolvers = require("./resolvers/taskResolvers");
 
 const startServer = async () => {
 	const app = express();
@@ -25,7 +25,7 @@ const startServer = async () => {
 	// Configurar Apollo Server
 	const server = new ApolloServer({
 		typeDefs,
-		resolvers,
+		resolvers:getResolvers(),
 		formatError: (err) => {
 			return new Error("Ocurrió un error en el servidor");
 		},
